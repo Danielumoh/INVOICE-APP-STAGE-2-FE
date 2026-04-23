@@ -1,0 +1,154 @@
+/* ── Google Font ── */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+/* ── Design Tokens: Light Mode ── */
+:root {
+  /* Primary */
+  --color-purple: #7c5dfa;
+  --color-purple-light: #9277ff;
+
+  /* Status Colors */
+  --color-paid-bg: #f3fdfa;
+  --color-paid-text: #33d69f;
+  --color-pending-bg: #fff8f0;
+  --color-pending-text: #ff8f00;
+  --color-draft-bg: #f4f4f5;
+  --color-draft-text: #373b53;
+
+  /* Backgrounds */
+  --color-bg: #f8f8fb;
+  --color-surface: #ffffff;
+  --color-sidebar: #373b53;
+
+  /* Text */
+  --color-text-primary: #0c0e16;
+  --color-text-secondary: #888eb0;
+  --color-text-muted: #7e88c3;
+
+  /* Borders & Inputs */
+  --color-border: #dfe3fa;
+  --color-input-bg: #ffffff;
+
+  /* Delete button */
+  --color-danger: #ec5757;
+  --color-danger-hover: #ff9797;
+
+  /* Shadows */
+  --shadow-card: 0px 10px 10px -10px rgba(72, 84, 159, 0.1);
+
+  /* Typography */
+  --font-family: "League Spartan", sans-serif;
+
+  /* Spacing */
+  --sidebar-width: 103px;
+}
+
+/* ── Design Tokens: Dark Mode ── */
+[data-theme="dark"] {
+  --color-bg: #141625;
+  --color-surface: #1e2139;
+  --color-sidebar: #373b53;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #dfe3fa;
+  --color-text-muted: #888eb0;
+
+  --color-border: #252945;
+  --color-input-bg: #1e2139;
+
+  --color-draft-bg: #252945;
+  --color-draft-text: #dfe3fa;
+
+  --shadow-card: 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  font-family: var(--font-family);
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ── Typography Scale ── */
+/* Matches the Figma type scale exactly */
+.text-h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.text-h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.75px;
+}
+.text-h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+.text-h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.25px;
+}
+.text-body {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.25px;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}

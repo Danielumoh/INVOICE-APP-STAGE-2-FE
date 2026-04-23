@@ -1,0 +1,36 @@
+/* 
+  CSS Modules — styles scoped to this component only.
+  The class names won't clash with anything else in the app.
+*/
+
+.appLayout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 4.5rem 1.5rem;
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ── Tablet ── */
+@media (min-width: 768px) {
+  .mainContent {
+    padding: 4.5rem 3rem;
+  }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+  .appLayout {
+    flex-direction: row;
+  }
+
+  .mainContent {
+    padding: 4.5rem;
+    margin-left: var(--sidebar-width);
+  }
+}

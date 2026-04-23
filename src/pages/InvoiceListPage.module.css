@@ -1,0 +1,115 @@
+.page {
+  width: 100%;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.75px;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ── Mobile/Desktop text toggle ── */
+.desktopText {
+  display: none;
+}
+.mobileText {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .desktopText {
+    display: inline;
+  }
+  .mobileText {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* ── New Invoice Button ── */
+.newButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-purple);
+  color: #fff;
+  border-radius: 24px;
+  padding: 0.5rem 0.875rem 0.5rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.newButton:hover {
+  background: var(--color-purple-light);
+}
+
+.newButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  color: var(--color-purple);
+  border-radius: 50%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.newButtonTextShort {
+  display: inline;
+}
+.newButtonTextFull {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .newButtonTextShort {
+    display: none;
+  }
+  .newButtonTextFull {
+    display: inline;
+  }
+  .newButton {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+}
+
+/* ── Invoice List ── */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

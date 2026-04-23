@@ -1,0 +1,43 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  min-width: 104px;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* ── Status Colors ── */
+.paid {
+  background: var(--color-paid-bg);
+  color: var(--color-paid-text);
+}
+.paid .dot {
+  background: var(--color-paid-text);
+}
+
+.pending {
+  background: var(--color-pending-bg);
+  color: var(--color-pending-text);
+}
+.pending .dot {
+  background: var(--color-pending-text);
+}
+
+.draft {
+  background: var(--color-draft-bg);
+  color: var(--color-draft-text);
+}
+.draft .dot {
+  background: var(--color-draft-text);
+}
