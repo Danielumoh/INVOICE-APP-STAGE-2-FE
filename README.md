@@ -35,18 +35,25 @@ src/
 ├── utils/ # Helper functions and seed data
 └── styles/ # Global styles
 
-# React + Vite
+## What I Learned
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project strengthened my understanding of:
 
-Currently, two official plugins are available:
+- CRUD operations in a frontend application
+- Shared state with React Context
+- Persistent browser storage with LocalStorage
+- Form validation and error handling
+- Routing with React Router
+- Responsive component design
+- Managing multiple application states in a larger React project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Running Locally
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone https://github.com/Danielumoh/INVOICE-APP-STAGE-2-FE.git
+cd INVOICE-APP-STAGE-2-FE
+npm install
+npm run dev
 
 ## Expanding the ESLint configuration
 
